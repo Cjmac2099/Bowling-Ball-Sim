@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: the actual bowling ball
-Input: the combination of all core and coverstock classes
-Output: all details to put the bowling ball together*/
-
 #ifndef BOWLING_BALL_HPP
 #define BOWLING_BALL_HPP
 
@@ -46,7 +41,6 @@ class bowling_ball {
 };
 
 bowling_ball::bowling_ball(string name, core_type* core, coverstock_type* coverstock) {
-  /* YOUR CODE HERE */
   // PARAMETERIZED CONSTRUCTOR
   this->name = name;
   this->core = core;
@@ -56,7 +50,6 @@ bowling_ball::bowling_ball(string name, core_type* core, coverstock_type* covers
 }
 
 bowling_ball::~bowling_ball() {
-  /* YOUR CODE HERE */
   delete core; // DEALLOCATE CORE
   core = nullptr;
   delete coverstock; // DEALLOCATE COVERSTOCK
@@ -73,7 +66,6 @@ void bowling_ball::print() const{
 }
 
 void bowling_ball::drill_ball(float PtP, float PSAtP, float PtV) {
-  /* YOUR CODE HERE */
   drill_layout[0] = PtP;
   drill_layout[1] = PSAtP;
   drill_layout[2] = PtV;
@@ -85,7 +77,6 @@ void bowling_ball::set_hook_potential() {
   const float GRIT_FACTOR = .6f,
               DIFF_FACTOR = .35f,
               RG_FACTOR = .05f;
-  /* YOUR CODE HERE */
   hook_potential = (coverstock->get_grit() * GRIT_FACTOR)  // FIX THIS
                   + (core->get_differential() * DIFF_FACTOR) 
                   + (core->get_rg() * RG_FACTOR);

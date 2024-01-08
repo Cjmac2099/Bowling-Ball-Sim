@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: another performance type of coverstock
-Input: performance base class and user input
-Output: info and title of all inputted values*/
-
 #ifndef URETHANE_HPP
 #define URETHANE_HPP
 
@@ -25,7 +20,6 @@ class urethane : public performance {
 
 urethane::urethane(string name, float mass, int grit, density hardness)
     : performance(name, mass, grit, hardness) {
-  /* YOUR CODE HERE */
   // ???
 }
 

@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: the cover of the bowling ball
-Input: user input
-Output: n/a */
-
 #ifndef COVERSTOCK_HPP
 #define COVERSTOCK_HPP
 
@@ -35,7 +30,6 @@ class coverstock_type {
 
   void set_grit(int);
   
-  /* YOUR CODE HERE */
   /* 1 virtual & 1 pure virtual function declaration */
   virtual void print() const = 0; // pure virtual
   virtual ~coverstock_type(){ }; // virtual
@@ -43,7 +37,6 @@ class coverstock_type {
 };
 
 coverstock_type::coverstock_type(string name, float mass, int grit) {
-  /* YOUR CODE HERE */
   this->name = name;
   this->mass = mass;
   this->grit = grit;
@@ -58,7 +51,6 @@ void coverstock_type::set_grit(int grit) {
   string greater_grit = "!Error:\tCannot polish to a grit higher than 4000";
   string sanding = "Sanding the coverstock to a lower grain";
   string polishing = "Polishing the coverstock to a finer grain";
-  /* YOUR CODE HERE */
   // ERROR CHECK
   if(grit < 500){
     cout << lesser_grit << endl;

@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: implementation of abstract core of a bowling ball
-Input: user input
-Output: n/a */
-
 #ifndef CORE_TYPE_HPP
 #define CORE_TYPE_HPP
 
@@ -31,7 +26,6 @@ class core_type {
   float get_rg()            const { return rg; } // get radius of gyration
   float get_differential()  const { return differential; } // get differential
 
-  /* YOUR CODE HERE */
   /* 1 virtual & 3 pure virtual function declarations */
   virtual void compute_differential(const float*) = 0; // pure virtual
   virtual string geometry_to_string() const = 0; // pure virtual

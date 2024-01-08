@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: the plastic coverstock
-Input: user input and virtual functions from coverstock_type
-Output: info and title of all inputted values*/
-
 #ifndef PLASTIC_HPP
 #define PLASTIC_HPP
 
@@ -23,7 +18,6 @@ class plastic : public coverstock_type {
 
 plastic::plastic(string name, float mass, int grit)
     : coverstock_type(name, mass, grit) {
-  /* YOUR CODE HERE */
   set_oil_absorption_rate(compute_oil_absorption_rate());
   
 }

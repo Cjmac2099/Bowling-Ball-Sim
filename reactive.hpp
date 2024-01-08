@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: a resin style coverstock
-Input: user input and performance base class
-Output: info and title of all inputted values*/
-
 #include "performance.hpp"
 using namespace std;
 
@@ -26,13 +21,11 @@ class reactive : public performance {
 reactive::reactive(string name, float mass, int grit, density hardness,
                    material compound)
     : performance(name, mass, grit, hardness) {
-  /* YOUR CODE HERE */
   this->compound = compound;
   set_oil_absorption_rate(compute_oil_absorption_rate());
 }
 
 string reactive::material_to_string() const {
-  /* YOUR CODE HERE */
   switch (compound) {
     case solid: // case for solid
       return "solid";
@@ -50,7 +43,6 @@ string reactive::material_to_string() const {
 }
 
 float reactive::compute_oil_absorption_rate() {
-  /* YOUR CODE HERE */
   float compoundRate = 0;
   switch(compound){
     case solid: // case for solid

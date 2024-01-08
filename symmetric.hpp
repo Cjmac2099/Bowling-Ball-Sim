@@ -1,9 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: child class of core_type that implements all virtual
-            funtions to be instantiated
-Input: virtual functions via core_type
-Output: info and title of all inputted values */
-
 #ifndef SYMMETRIC_HPP
 #define SYMMETRIC_HPP
 
@@ -27,7 +21,7 @@ class symmetric_core : public core_type {
 
   ~symmetric_core();
 
-  /* YOUR CODE HERE - 3 function redeclarations */
+  /*3 function redeclarations */
   void compute_differential(const float*);
   string geometry_to_string() const;
   void print() const;
@@ -38,7 +32,7 @@ string symmetric_core::axis_to_string() const {
   return "Ball is non-axisymmetric";
 }
 
-/* YOUR CODE HERE - 2 more function definitions (6 total) */
+/* 2 more function definitions (6 total) */
 // PARAMETERIZED CONSTRUCTOR
 symmetric_core::symmetric_core(string name, float pan_mass, float core_mass, 
                               float rg, bool axis, symmetric_geometry shape)
@@ -85,7 +79,6 @@ void symmetric_core::print() const {
 
 // OUTPUT THE GEOMETRY SHAPE INTO A STRING
 string symmetric_core::geometry_to_string() const {
-  /* YOUR CODE HERE */
   switch(shape){
     case sphere: // case of sphere
       return "sphere";

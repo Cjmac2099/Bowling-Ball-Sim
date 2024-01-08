@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: the bowling lane
-Input: user input and useage of oil_pattern and bowling_ball
-Output: info and title of all inputted values */
-
 #ifndef LANE_TYPE_H
 #define LANE_TYPE_H
 
@@ -47,7 +42,6 @@ float lane_type::compute_board_track(bowling_ball* ball, bool debug) const {
 
   for (int i = 0; i < BOARD_SEGMENTS; i++) {
     if (debug) cout << "Current Board: " << current_board << endl;
-    /* YOUR CODE HERE */
       // get glide transition
       glide_transition = *oil_volume_segments * OIL_BOARDS_PER_SEGMENT;
       float oil_on_board = 1.0f - *oil_volume_segments;
@@ -77,7 +71,6 @@ void lane_type::transition_oil(bowling_ball* ball, bool debug) {
 
   cout << fixed << setprecision(3);
   for (int i = 0; i < BOARD_SEGMENTS; i++) {
-    /* YOUR CODE HERE */
     if (oil_volume_segments[i] > 0.0f) {
       // Calculate the volume of oil to be absorbed
       oil_volume = oil_volume_segments[i] * MAX_OIL_ABSORBED * oil_absorption_rate;

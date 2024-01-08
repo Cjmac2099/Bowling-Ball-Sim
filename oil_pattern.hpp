@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description:the volume of oil per segment on a lane
-Input: user input
-Output: info and title of all inputted values */
-
 #ifndef OIL_PATTERN_H
 #define OIL_PATTERN_H
 

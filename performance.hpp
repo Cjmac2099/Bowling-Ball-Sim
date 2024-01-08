@@ -1,8 +1,3 @@
-/*Name: Christopher Johnson, 5007642687, 1001, Assignment 5
-Description: the performance style of coverstocks
-Input: user input and virtual functions of coverstock_type
-Output: info and title of all inputted values*/
-
 #ifndef PERFORMANCE_HPP
 #define PERFORMANCE_HPP
 
@@ -16,7 +11,7 @@ class performance : public coverstock_type {
   density hardness;
 
  protected:
-  /* YOUR CODE HERE - 1 virtual function declaration */
+  /* 1 virtual function declaration */
   virtual float compute_oil_absorption_rate();
 
  public:
@@ -29,13 +24,13 @@ class performance : public coverstock_type {
 
 performance::performance(string name, float mass, int grit, density hardness)
     : coverstock_type(name, mass, grit) {
-  /* YOUR CODE HERE */
+  
   //PARAMETERIZED CONSTRUCTOR
   this->hardness = hardness;
 }
 
 string performance::hardness_to_string() const {
-  /* YOUR CODE HERE */
+  
   switch(hardness){
     case soft: // case of soft
       cout << "soft" << endl;
@@ -53,7 +48,7 @@ string performance::hardness_to_string() const {
 }
 
 float performance::compute_oil_absorption_rate() {
-  /* YOUR CODE HERE */
+  
   switch(hardness){
     case soft: // case for soft
       return 1.5;
